@@ -1,8 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+@mixin btnStyle() {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+$primaryColor: #4a69bd;
+$btnColor: #fad390;
+$textColor: #0c2461;
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  background: $primaryColor;
+}
+.start_btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  button {
+    @include btnStyle();
+    background-color: $btnColor;
+    color: $textColor;
+  }
+}
+/*start quiz button styling*/
