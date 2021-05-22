@@ -9,10 +9,17 @@
   border-radius: 5px;
   cursor: pointer;
 }
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 $primaryColor: #4a69bd;
+$secondaryColor: #fff;
 $btnColor: #fad390;
 $textColor: #0c2461;
+$textColor2: #007bff;
 * {
   margin: 0;
   padding: 0;
@@ -23,15 +30,67 @@ $textColor: #0c2461;
 body {
   background: $primaryColor;
 }
-.start_btn {
+/*start quiz button styling*/
+.start_btn,
+.info_box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  button {
+  .start_btn {
     @include btnStyle();
     background-color: $btnColor;
     color: $textColor;
   }
 }
-/*start quiz button styling*/
+
+.info_box {
+  width: 540px;
+  background: $secondaryColor;
+  border-radius: 5px;
+  .info_title {
+    height: 60px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid $textColor;
+    @include flexCenter();
+  }
+  .info_list {
+    padding: 15px 35px;
+    .info {
+      margin: 5px 0;
+      font-size: 1.1rem;
+      span {
+        font-weight: 500;
+        color: $textColor2;
+      }
+    }
+  }
+}
+.info_box .buttons {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 35px;
+  border-top: 1px solid $textColor;
+  button {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    &.quit {
+      color: $textColor2;
+      border-color: $textColor2;
+    }
+    &.restart {
+      color: $secondaryColor;
+      background: $textColor2;
+    }
+  }
+}

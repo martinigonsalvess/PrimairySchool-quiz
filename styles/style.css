@@ -11,7 +11,9 @@ body {
   background: #4a69bd;
 }
 
-.start_btn {
+/*start quiz button styling*/
+.start_btn,
+.info_box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,7 +21,8 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.start_btn button {
+.start_btn .start_btn,
+.info_box .start_btn {
   font-size: 1.5rem;
   font-weight: 500;
   padding: 15px 30px;
@@ -31,5 +34,76 @@ body {
   color: #0c2461;
 }
 
-/*start quiz button styling*/
+.info_box {
+  width: 540px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.info_box .info_title {
+  height: 60px;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #0c2461;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info_box .info_list {
+  padding: 15px 35px;
+}
+
+.info_box .info_list .info {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.info_box .info_list .info span {
+  font-weight: 500;
+  color: #007bff;
+}
+
+.info_box .buttons {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 35px;
+  border-top: 1px solid #0c2461;
+}
+
+.info_box .buttons button {
+  margin: 0 5px;
+  height: 40px;
+  width: 100px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.info_box .buttons button.quit {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.info_box .buttons button.restart {
+  color: #fff;
+  background: #007bff;
+}
 /*# sourceMappingURL=style.css.map */
