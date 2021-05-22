@@ -112,6 +112,7 @@ body {
 }
 //------------QUIZ BOX---------------
 .quiz_box {
+  display: none;
   width: 550px;
   background: $secondaryColor;
   border-radius: 5px;
@@ -197,6 +198,42 @@ body {
           }
         }
       }
+    }
+  }
+}
+.quiz_box footer {
+  height: 60px;
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .total_que span {
+    display: flex;
+    user-select: none;
+    p {
+      font-weight: 600;
+      padding: 0 5px;
+      color: $textColor2;
+      &:first-child {
+        padding-left: 0px;
+      }
+    }
+  }
+  .next_btn {
+    height: 40px;
+    padding: 0 13px;
+    font-size: 1.2rem;
+    outline: none;
+    color: $secondaryColor;
+    background: $textColor2;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.03s ease;
+    &:hover {
+      background: $textColor;
+      color: $secondaryColor;
     }
   }
 }
