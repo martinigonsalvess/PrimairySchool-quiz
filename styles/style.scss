@@ -167,6 +167,35 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        &:hover {
+          color: $thirdColor;
+          background: $textColor2;
+        }
+        .icon {
+          height: 26px;
+          width: 25px;
+          border: 2px solid transparent;
+          border-radius: 50%;
+          text-align: center;
+          font-size: 13px;
+          line-height: 24px;
+          pointer-events: none;
+          &.tick {
+            color: #23903c;
+            border-color: #23903c;
+            background: #d4edda;
+          }
+          &.cross {
+            color: #a42834;
+            border-color: #a42834;
+            background: #f8d7da;
+          }
+        }
       }
     }
   }

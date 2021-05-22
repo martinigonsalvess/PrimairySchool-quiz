@@ -212,5 +212,40 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.quiz_box section .option_list .option:last-child {
+  margin-bottom: 0px;
+}
+
+.quiz_box section .option_list .option:hover {
+  color: aliceblue;
+  background: #007bff;
+}
+
+.quiz_box section .option_list .option .icon {
+  height: 26px;
+  width: 25px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 13px;
+  line-height: 24px;
+  pointer-events: none;
+}
+
+.quiz_box section .option_list .option .icon.tick {
+  color: #23903c;
+  border-color: #23903c;
+  background: #d4edda;
+}
+
+.quiz_box section .option_list .option .icon.cross {
+  color: #a42834;
+  border-color: #a42834;
+  background: #f8d7da;
 }
 /*# sourceMappingURL=style.css.map */
