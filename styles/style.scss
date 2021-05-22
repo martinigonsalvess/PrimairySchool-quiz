@@ -21,9 +21,12 @@
 
 $primaryColor: #4a69bd;
 $secondaryColor: #fff;
+$thirdColor: aliceblue;
 $btnColor: #fad390;
 $textColor: #0c2461;
 $textColor2: #007bff;
+$textColor3: #84c5fe;
+
 * {
   margin: 0;
   padding: 0;
@@ -113,6 +116,8 @@ body {
   background: $secondaryColor;
   border-radius: 5px;
   header {
+    position: relative;
+    z-index: 99;
     height: 70px;
     padding: 0 30px;
     background: $secondaryColor;
@@ -145,5 +150,24 @@ body {
   }
   section {
     padding: 25px 30px 20px 30px;
+    background: $secondaryColor;
+    .que_text {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .option_list {
+      padding: 20px 0;
+      display: block;
+      .option {
+        background: $thirdColor;
+        border: 1px solid $textColor3;
+        border-radius: 5px;
+        padding: 8px 15px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
   }
 }
