@@ -37,14 +37,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  .start_btn {
-    @include btnStyle();
-    background-color: $btnColor;
-    color: $textColor;
-  }
+}
+.start_btn button {
+  @include btnStyle();
+  background-color: $btnColor;
+  color: $textColor;
 }
 
 .info_box {
+  display: none; //don't show info box
   width: 540px;
   background: $secondaryColor;
   border-radius: 5px;
@@ -84,13 +85,21 @@ body {
     font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease;
     &.quit {
       color: $textColor2;
       border-color: $textColor2;
+      &:hover {
+        background: $textColor;
+        color: $secondaryColor;
+      }
     }
     &.restart {
       color: $secondaryColor;
       background: $textColor2;
+      &:hover {
+        background: $textColor;
+      }
     }
   }
 }

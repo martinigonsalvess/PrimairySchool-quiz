@@ -21,8 +21,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.start_btn .start_btn,
-.info_box .start_btn {
+.start_btn button {
   font-size: 1.5rem;
   font-weight: 500;
   padding: 15px 30px;
@@ -35,6 +34,7 @@ body {
 }
 
 .info_box {
+  display: none;
   width: 540px;
   background: #fff;
   border-radius: 5px;
@@ -95,6 +95,8 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .info_box .buttons button.quit {
@@ -102,8 +104,17 @@ body {
   border-color: #007bff;
 }
 
+.info_box .buttons button.quit:hover {
+  background: #0c2461;
+  color: #fff;
+}
+
 .info_box .buttons button.restart {
   color: #fff;
   background: #007bff;
+}
+
+.info_box .buttons button.restart:hover {
+  background: #0c2461;
 }
 /*# sourceMappingURL=style.css.map */
