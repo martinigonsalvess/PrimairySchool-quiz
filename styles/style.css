@@ -13,7 +13,8 @@ body {
 
 /*start quiz button styling*/
 .start_btn,
-.info_box {
+.info_box,
+.quiz_box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,10 +42,10 @@ body {
 }
 
 .info_box .info_title {
-  height: 60px;
-  width: 100%;
   font-size: 1.5rem;
   font-weight: 600;
+  height: 60px;
+  width: 100%;
   border-bottom: 1px solid #0c2461;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,5 +117,70 @@ body {
 
 .info_box .buttons button.restart:hover {
   background: #0c2461;
+}
+
+.quiz_box {
+  width: 550px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.quiz_box header {
+  height: 70px;
+  padding: 0 30px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #0c2461;
+}
+
+.quiz_box header .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.quiz_box header .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 145px;
+  height: 45px;
+  background: #4a69bd;
+  color: #fff;
+  padding: 0 8px;
+  border-radius: 5px;
+}
+
+.quiz_box header .timer .timer_text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.quiz_box header .timer .timer_sec {
+  font-size: 1.3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.quiz_box section {
+  padding: 25px 30px 20px 30px;
 }
 /*# sourceMappingURL=style.css.map */
