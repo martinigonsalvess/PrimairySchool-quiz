@@ -35,7 +35,7 @@ let questions = [
   {
     numb: 6,
     question:
-      "Wat is de kleur van de jurk van Assepoester? Groen, geel of blauw?",
+      "Wat is de kleur van de jurk van Assepoester? Wit, Blauw, Gifgroen of Paars?",
     answer: "Blauw",
     options: ["Wit", "Blauw", "Gifgroen", "Paars"],
   },
