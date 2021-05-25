@@ -5,7 +5,7 @@ let questions = [
     numb: 1,
     question: "Uit welk land komt pizza?",
     answer: "Italië",
-    options: ["Nederland", "Spanje", "Italië", "Duitsland"],
+    options: ["Italië", "Nederland", "Spanje", "Duitsland"],
   },
   {
     numb: 2,

@@ -251,6 +251,19 @@ body {
       }
     }
   }
+  .option_list .option.correct {
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+  }
+  .option_list .option.incorrect {
+    color: #a42834;
+    border-color: #a42834;
+    background: #f8d7da;
+  }
+  .option_list .option.disabled {
+    pointer-events: none;
+  }
 }
 .quiz_box footer {
   height: 60px;

@@ -5,6 +5,7 @@ const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
+const option_list = document.querySelector(".option_list");
 
 // if start quiz button clicked
 start_btn.onclick = () => {
@@ -43,7 +44,6 @@ next_btn.onclick = () => {
 //getting questions and options from array
 function showQuestions(index) {
   const que_text = document.querySelector(".que_text");
-  const option_list = document.querySelector(".option_list");
   let que_tag =
     "<span>" +
     questions[index].numb +
@@ -65,7 +65,33 @@ function showQuestions(index) {
     " <span></span></div>";
   que_text.innerHTML = que_tag;
   option_list.innerHTML = option_tag;
+
+  //option list
+  const option = option_list.querySelectorAll(".option");
+  for (let i = 0; i < option.length; i++) {
+    option[i].setAttribute("onclick", "optionSelected(this)");
+  }
 }
+
+// creating the new div tags which for icons
+let tickIconTag = '<div class="icon tick"><i class="fas fa-check"></i></div>';
+let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
+//function for Answer
+const optionSelected = (answer) => {
+  let userAns = answer.textContent;
+  let correctAns = questions[que_count].answer;
+  let allOptions = option_list.children.length;
+  if (userAns == correctAns) {
+    answer.classList.add("correct");
+  } else {
+    answer.classList.add("incorrect");
+  }
+
+  // Once user selected disable all options
+  for (let i = 0; i < allOptions; i++) {
+    option_list.children[i].classList.add("disabled");
+  }
+};
 
 //function bottom counter
 const queCounter = (index) => {
