@@ -38,6 +38,13 @@ next_btn.onclick = () => {
     queCounter(que_numb);
   } else {
     console.log("completed");
+
+    //if answer is incorrect then automatically select the correct answer
+    for (let i = 0; i < allOptions; i++) {
+      if (option_list.children[i].textContent == correctAns) {
+        option_list.chidren[i].setAttribute("class", "option correct");
+      }
+    }
   }
 };
 
@@ -83,8 +90,10 @@ const optionSelected = (answer) => {
   let allOptions = option_list.children.length;
   if (userAns == correctAns) {
     answer.classList.add("correct");
+    answer.insertAdjacentHTML("beforeend", tickIconTag);
   } else {
     answer.classList.add("incorrect");
+    answer.insertAdjacentHTML("beforeend", crossIconTag);
   }
 
   // Once user selected disable all options
