@@ -28,7 +28,8 @@ body {
 }
 
 .info_box.activeInfo,
-.quiz_box.activeQuiz {
+.quiz_box.activeQuiz,
+.result_box.activeResult {
   opacity: 1;
   z-index: 5;
   pointer-events: auto;
@@ -331,6 +332,7 @@ body {
 }
 
 .quiz_box footer .next_btn {
+  display: none;
   height: 40px;
   padding: 0 13px;
   font-size: 1.2rem;
