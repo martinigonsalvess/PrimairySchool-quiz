@@ -6,6 +6,7 @@ const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const option_list = document.querySelector(".option_list");
+const timeCount = document.querySelecctor(".timer .timer_sec");
 
 // if start quiz button clicked
 start_btn.onclick = () => {
@@ -94,9 +95,16 @@ const optionSelected = (answer) => {
   } else {
     answer.classList.add("incorrect");
     answer.insertAdjacentHTML("beforeend", crossIconTag);
-  }
 
-  // Once user selected disable all options
+    //if answer is incorrect the automatically select the correcht answer
+    for (let i = 0; i < allOptions; i++) {
+      if (option_list.children[i].textContent == correctAns) {
+        option_list.children[i].setAttribute("class", "option correct");
+        option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag);
+      }
+    }
+  }
+  //once user selected disabled all options
   for (let i = 0; i < allOptions; i++) {
     option_list.children[i].classList.add("disabled");
   }
