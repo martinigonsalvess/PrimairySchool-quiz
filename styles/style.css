@@ -287,6 +287,15 @@ body {
   pointer-events: none;
 }
 
+.quiz_box header .time_line {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 4px;
+  width: 50%;
+  background: #007bff;
+}
+
 .quiz_box footer {
   height: 60px;
   width: 100%;
