@@ -90,49 +90,33 @@ let questions = [
   {
     numb: 12,
     question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
-    options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
-    ],
+      "Hoe heet het als een rechter beslist of iemand zich wel of niet volgens de wet heeft gedragen en of hij straf verdient",
+    answer: "De rechtspraak ",
+    options: ["De afspraak", "De rechtspraak", "De uitspraak", "De beslissing"],
   },
   {
     numb: 13,
-    question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
-    options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
-    ],
+    question: "Welk recht is het om een markt te houden",
+    answer: "Marktrecht ",
+    options: ["Marktrecht", "Dorpsrecht", "Stadsrechten", "Primarkt"],
   },
   {
     numb: 14,
     question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
-    options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
-    ],
+      "... is geld dat de bevolking aan de overheid betaalt voor wegen, scholen enzovoorts",
+    answer: "Belasting ",
+    options: ["Huur", "Vergoeding", "Tol", "Belasting"],
   },
   {
     numb: 15,
     question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
+      "Hoe heet het als je het recht hebt om zelf een bestuur te kiezen?",
+    answer: "Het zelfbestuur ",
     options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
+      "Het zelfbestuur",
+      "Zelfstandigheid",
+      "Zelfzuchtig",
+      "Het Bestuursrecht",
     ],
   },
   {
