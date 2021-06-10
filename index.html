@@ -13,43 +13,46 @@
     <link rel="stylesheet" href="./styles/style.css" />
 
     <!--Font awesome cdn link for icons-->
-    <title>Quiz App</title>
+    <title>Oefeningen 2021</title>
   </head>
   <body>
     <!--Start quiz button-->
-    <div class="start_btn"><button>Start Quiz</button></div>
+    <div class="start_btn"><button>Begin met de vragen</button></div>
 
     <!--                        Info box-->
     <div class="info_box">
       <div class="info_title">
-        <span>Some Rules of this Quiz</span>
+        <span>Even doorlezen voordat je begint</span>
       </div>
       <div class="info_list">
         <div class="info">
-          1) You will have only <span>15 seconds</span> per each question
-        </div>
-        <div class="info">2) Once you select answer, you can't reselect</div>
-        <div class="info">
-          3) You can't select any option once time goes off
+          1) Je hebt <span>15 seconds</span> om vraag te beantwoorden
         </div>
         <div class="info">
+          2) Eenmaal een antwoord gegeven kan je niet meer veranderen
+        </div>
+        <div class="info">
+          3) Als de 15 seconden voorbij zijn kan je geen antwoorden meer
+          selecteren
+        </div>
+        <!-- <div class="info">
           4) You can't exit from the Quiz while you're playing
-        </div>
+        </div> -->
         <div class="info">
-          5) You'll get points on the basis of you correct answers
+          5) Je goede antwoorden worden bij elkaar opgeteld
         </div>
       </div>
       <div class="buttons">
-        <button class="quit">Exit Quiz</button>
-        <button class="restart">Continue</button>
+        <button class="quit">Stop</button>
+        <button class="restart">Verder</button>
       </div>
     </div>
     <!--                       Quiz Box-->
     <div class="quiz_box">
       <header>
-        <div class="title">Awesome Quiz Application</div>
+        <div class="title">Oefeningen</div>
         <div class="timer">
-          <div class="timer_text">Time Left</div>
+          <div class="timer_text">Tijd over</div>
           <div class="timer_sec">15</div>
         </div>
         <div class="time_line"></div>
@@ -86,7 +89,7 @@
             Questions</span
           > -->
         </div>
-        <button class="next_btn">Next Que</button>
+        <button class="next_btn">Volgende</button>
       </footer>
     </div>
     <!--                        Result box-->
@@ -94,7 +97,7 @@
       <div class="icon">
         <i class="fas fa-crown"></i>
       </div>
-      <div class="complete_text">You've completed the Quiz!!</div>
+      <div class="complete_text">Einde oefening</div>
       <div class="score_text">
         <!-- <span
           >and sorry, You got only
@@ -103,8 +106,8 @@
           <p>5</p></span -->
       </div>
       <div class="buttons">
-        <button class="restart">Replay Quiz</button>
-        <button class="quit">Quit Quiz</button>
+        <button class="restart">Probeer nog een keer</button>
+        <button class="quit">Stop</button>
       </div>
     </div>
     <script src="/js/script.js"></script>

@@ -177,13 +177,13 @@ let questions = [
   {
     numb: 22,
     question: "Een ... was in de middeleeuwen een rang in een beroep",
-    answer: "Stadsrechten ",
+    answer: "Gezel ",
     options: ["Flierefluiter", "Metgezel", "Gezel", "Majoor"],
   },
   {
     numb: 23,
     question: "Hoe heet het examen om te testen of iemand meester kan worden",
-    answer: "De meesterproef ",
+    answer: "Meesterproef ",
     options: ["Proefwerk", "Meesterproef", "Examinator", "Eind examen"],
   },
 ];
