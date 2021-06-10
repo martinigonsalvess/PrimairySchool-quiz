@@ -122,97 +122,68 @@ let questions = [
   {
     numb: 16,
     question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
-    options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
-    ],
+      "Een ... was in vroegere tijden het hoofd van de rechtbank en van de politie",
+    answer: "schout ",
+    options: ["scout", "commissie", "schout", "schutterij"],
   },
   {
     numb: 17,
-    question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
+    question: "... bestuurden in vroeger tijd samen een stad",
+    answer: "De schepenen ",
     options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
+      "De burgers",
+      "De burgermeester en wethouders",
+      "De schepenen",
+      "De zeelieden",
     ],
   },
   {
     numb: 18,
-    question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
+    question: "... is een middeleeuwsse rechtbank en stadsbestuur",
+    answer: "De schepenbank ",
     options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
+      "De schepenen",
+      "De wethouders",
+      "De hooggerechtshof",
+      "De schepenbank",
     ],
   },
   {
     numb: 19,
     question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
+      "... is een soort stempel van de stad. Dat stempel bewijst dat een beslissing op papier echt van het stadsbestuur is",
+    answer: "Het stadszegel ",
     options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
+      "Het stadszegel",
+      "Het stembiljet",
+      "Het bedrijfsstempel",
+      "Een postzegel",
     ],
   },
   {
     numb: 20,
     question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
-    options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
-    ],
+      "Een ... was in de middeleeuwen een vereniging van mensen met hetzelfde beroep",
+    answer: "Gilde ",
+    options: ["Meute", "Cult", "Supporters vereniging", "Gilde"],
   },
   {
     numb: 21,
-    question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
-    options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
-    ],
+    question: "De ... is iemand die iets heel goed kan",
+    answer: "Meester ",
+    options: ["Leerling", "Meester", "Onkundige", "Onwetende"],
   },
+
   {
     numb: 22,
-    question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
+    question: "Een ... was in de middeleeuwen een rang in een beroep",
     answer: "Stadsrechten ",
-    options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
-    ],
+    options: ["Flierefluiter", "Metgezel", "Gezel", "Majoor"],
   },
   {
     numb: 23,
-    question:
-      "... zijn de rechten die een stad kreeg om zelf rechtspraak te houden en belasting te heffen",
-    answer: "Stadsrechten ",
-    options: [
-      "Aanrecht",
-      "Rechtswetenschap",
-      "Stadsrechten",
-      "Nederlands recht",
-    ],
+    question: "Hoe heet het examen om te testen of iemand meester kan worden",
+    answer: "De meesterproef ",
+    options: ["Proefwerk", "Meesterproef", "Examinator", "Eind examen"],
   },
 ];
