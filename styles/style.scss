@@ -69,7 +69,11 @@ $textColor3: #84c5fe;
 }
 
 body {
-  background: $primaryColor;
+  background: url("../assets/images/girona.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  // background-position: center;
 }
 /*start quiz button styling*/
 .start_btn,

@@ -8,7 +8,10 @@
 }
 
 body {
-  background: #4a69bd;
+  background: url("../assets/images/girona.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 /*start quiz button styling*/
