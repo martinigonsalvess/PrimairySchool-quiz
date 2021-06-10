@@ -5,15 +5,15 @@ let questions = [
     numb: 1,
     question:
       "Een ... verdient zijn geld met kopen en verkopen van goederen om er winst mee te maken",
-    answer: "de koopman ",
-    options: ["de huisvrouw", "de visser", "de koopman", "de metselaar"],
+    answer: "koopman ",
+    options: ["huisvrouw", "visser", "koopman", "metselaar"],
   },
   {
     numb: 2,
     question:
       "De ... is een plek waar handelaren bij elkaar kwamen om handel te drijven",
-    answer: "de handelplaats ",
-    options: ["de apotheek", "de kerk", "thuis", "de handelplaats"],
+    answer: "handelplaats ",
+    options: ["apotheek", "kerk", "thuis", "handelplaats"],
   },
   {
     numb: 3,
