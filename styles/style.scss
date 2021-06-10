@@ -69,10 +69,10 @@ $textColor3: #84c5fe;
 }
 
 body {
-  background: url("../assets/images/girona.jpg");
-  background-repeat: no-repeat;
+  background: url("../assets/images/girona.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
   // background-position: center;
 }
 /*start quiz button styling*/
