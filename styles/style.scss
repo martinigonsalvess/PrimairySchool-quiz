@@ -360,3 +360,11 @@ body {
   @include btn2();
   background: grey;
 }
+// media queries
+@media only screen and (max-width: 600px) {
+  .info_box,
+  .quiz_box,
+  .result_box {
+    width: 300px;
+  }
+}

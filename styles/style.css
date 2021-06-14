@@ -11,6 +11,7 @@ body {
   background: url("../assets/images/girona.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 
 /*start quiz button styling*/
@@ -448,5 +449,14 @@ body {
 .result_box .buttons .quit:hover {
   background: #0c2461;
   color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .info_box,
+  .quiz_box,
+  .result_box {
+    width: 300px;
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
