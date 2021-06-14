@@ -470,6 +470,9 @@ body {
   .quiz_box footer .next_btn {
     font-size: 1rem;
   }
+  .quiz_box header .time_line {
+    display: none;
+  }
   .result_box .buttons button {
     font-size: 1rem;
   }
