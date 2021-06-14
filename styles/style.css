@@ -473,5 +473,8 @@ body {
   .result_box .buttons button {
     font-size: 1rem;
   }
+  .result_box .score_text span {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
