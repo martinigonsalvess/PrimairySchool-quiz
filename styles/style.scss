@@ -275,7 +275,8 @@ body {
   bottom: 0px;
   left: 0px;
   height: 4px;
-  background: $textColor2;
+  background: red;
+  // background: $textColor2;
 }
 .quiz_box footer {
   height: 60px;
@@ -366,5 +367,18 @@ body {
   .quiz_box,
   .result_box {
     width: 300px;
+  }
+  .info_box .info_title {
+    font-size: 1rem;
+  }
+  .quiz_box header .title {
+    font-size: 1.2rem;
+  }
+  .quiz_box header .timer {
+    font-size: 1rem;
+    width: 110px;
+  }
+  .quiz_box footer .next_btn {
+    font-size: 1rem;
   }
 }
