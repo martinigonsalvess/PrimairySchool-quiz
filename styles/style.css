@@ -470,5 +470,8 @@ body {
   .quiz_box footer .next_btn {
     font-size: 1rem;
   }
+  .result_box .buttons button {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
